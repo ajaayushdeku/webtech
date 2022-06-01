@@ -1,4 +1,209 @@
-a
+/* @font-face {
+    font-family: 'aileronblack';
+    src: url('Aileron-Black-webfont.eot');
+    src: url('Aileron-Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Aileron-Black-webfont.woff2') format('woff2'),
+         url('Aileron-Black-webfont.woff') format('woff'),
+         url('Aileron-Black-webfont.ttf') format('truetype'),
+         url('Aileron-Black-webfont.svg#aileronblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+} */
+body{
+    font-family: 'aileronblack';
+    width: 100%;
+}
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.brand{
+    border-bottom: 3px solid #000; 
+    height: 90px;
+    margin: -.5em 0em 0em 0em;
+}
+header{
+    border: 1px solid rgb(189, 189, 189);
+    margin: -.5em 0em 0em 0em;
+    height: 80px;
+    width: 100%;
+    background-color: hsl(0, 0%, 91%);
+}
+.title{
+    margin: 1em .5em .5em 3em;
+    font-size: 30px;
+    font-weight: bold;
+}
+.logo,.profile,.title{
+    position: absolute;
+}
+.logo,.profile{
+    border-radius: 100%;
+}
+.logo{
+    width: 65px;
+    height: 65px;
+    margin: .8em 0 0 1em;
+}
+.profile{
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin: 1.2em 1.5em 0em 1em;
+    border: 2px solid #000;
+}
+.profile:hover{
+    border: 2px solid rgb(167, 167, 167);
+}
+.navbtn{
+    display: inline-block;
+    padding: 1em 2em;
+    text-decoration: none;
+    width: 150px;
+    height: 20px;
+    text-align: center;
+    color: #000;
+}
+.navbtn:hover{
+    border-bottom: 3px inset #000;
+    color: rgb(89, 88, 88);
+}
+.btn{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: min-content;
+    min-height: 39px;
+    box-shadow: 0px 2px 10px rgba(50, 50, 52, 0.7);
+    background-color: #fff;
+    z-index: 3;
+ 
+}
+main{
+    width: 100%;
+}
+section{
+    position: relative;
+    margin: 4rem;
+    height: 600px;
+    width: 80%;
+}
+section h1{
+    font-size: 30px;
+}
+.about p{
+    overflow: auto;
+    border-radius: 7px; 
+}
+.about p,.nerd{
+    border: 2px solid #000;
+}
+.about, .about p{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 200px;
+    margin-top: 2em;
+}
+.about{
+
+    margin: 2em;
+}
+.about p{
+    text-align: left;
+    background-color: #fff;
+    font-size: 18px;
+    padding: 2em;
+    z-index: 2;
+}
+.nerd{
+    padding: 1em;
+    margin: .2em;
+    float: left;
+    width: 100%;
+    height: 200px;
+    border-radius: 7px; 
+}
+.nerd img{
+    width: 60px;
+    height: 60px;
+    padding: .5em;
+    border: 3px solid rgb(116, 114, 114);
+    border-radius: 100%;
+    background-color: rgb(255, 255, 255);
+}
+.nerd div{
+    display: inline-block;
+    margin: 1.5em 2.3em 2em 1em;
+    font-size: 20px;
+}
+.nerd img:hover{
+    border: 3px solid rgb(81, 81, 81);
+    border-radius: 100%;
+    background-color: rgb(214, 214, 214);
+}
+
+.nerd-list,.nerds{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right:0;
+}
+.nerd-list{
+    height: 400px;
+    margin: 2em 2em 2em 2em;
+    padding: 1em;
+    border-radius: 7px;
+}
+
+ul,section{
+    display: inline-block;
+}
+ul
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-top: 3em;
+}
+li{
+    margin: 1em 1em;
+
+}
+footer{
+    margin: auto;
+}
+footer div.contact,footer div.social{
+    width: 47.92%;
+    height: 220px;
+    padding:2em 0em 2em 2em;
+    background-color: hsla(0, 0%, 92%, 0.937);
+    /* border: 1px solid #000; */
+    font-size: 15px;
+    margin: 0em -.5em 0em .5em;
+    min-width: 300px;
+}
+footer div.contact{
+    position:absolute;
+    left: 0;
+}
+footer div.social{
+    position:absolute;
+    right: 0;
+}
+
+
+
+.b
 {
     display: inline-block;
     text-decoration: none;
@@ -13,12 +218,12 @@ a
     width: min-content;
     min-width: 150px;
 }
-a:hover
+.b:hover
 {
     padding: 9px 35px;
     border:  solid 3px #1c1d1c;
 }
-a:active
+.b:active
 {
     border:  solid 2px #8b8d8d;
     padding: 10px 36px;
