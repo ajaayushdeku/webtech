@@ -14,11 +14,13 @@
             <h1 class="float-right title">NERD</h1>
         </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#contactus">Contact</a>
-            <a href="#">Categories</a>
-            <a href="./loginpage.html">Log in / Sign Up</a>
-            <img src="./images/avatar.png" alt="" class="avatar float-right">
+            <a href="#" class="btn">Home</a>
+            <a href="#contactus" class="btn">Contact</a>
+            <a href="#cate" class="btn">Categories</a>
+            <a href="#ls" class="btn">Log in / Sign Up</a>
+            <a href="./profile.html" class="profile">
+                <img src="./images/avatar.png" alt="" class="avatar float-right">
+            </a>
         </nav>
 
     </header>
@@ -29,7 +31,8 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iure, magni eius vitae et voluptate consequatur non numquam. Voluptatum aliquid accusantium aut non consequuntur iure illo ipsam voluptate officia praesentium?
             </div>
         </section>
-        <section class="category">
+        <br/>
+        <section class="category" id="cate">
             <h1>Categories of NERDs</h1>
             <div class="programming-nerd">
                 <div class="gallary float-left">
@@ -79,6 +82,65 @@
                 </div>
             </div>
         </section>
+        <section id="ls">
+            <section class="login float-left">
+         
+                <img src="./images/avatar.png" alt="">
+                <div>
+                    <p>Username/E-mail : </p>
+                    <input type="text" placeholder="Enter your username./e-mail">
+                </div>
+                <div>
+                    <p>Password : </p>
+                    <input type="text" placeholder="Enter your password">
+                </div>
+                <div>
+                    <button class="float-left"> </button>
+                    <p>Remember Me</p>
+                </div>
+                <a href="#">Log In</a>
+         
+        </section>
+        <p class="or float-left">OR</p>
+        <section class="signup">
+                <img src="./images/avatar.png" alt="">
+                <div>
+                    <p>First Name : </p>
+                    <input type="text" placeholder="Enter your first name">
+                </div>
+                <div>
+                    <p>Last Name : </p>
+                    <input type="text" placeholder="Enter yout last name">
+                </div>
+                <div>    
+                    <p>E-mail</p>
+                    <input type="text" placeholder="Enter your e-mail">
+                </div>
+                <div>
+                    <p>Username : </p>
+                    <input type="text" placeholder="Enter your username">
+                </div>
+                <div>
+                    <p>Password : </p>
+                    <input type="text" placeholder="Enter yout password">
+                </div>
+                <div>
+                    <p>Confirm Password : </p>
+                    <input type="text" placeholder="Enter yout password">
+                </div>
+                <div>
+                    <select id="ntype">
+                        <option>Select one of the option</option>
+                        <option value="Programmer"> Programmer </option>
+                        <option value="Gamer"> Gamer</option>
+                        <option value="Book">Book</option>
+                    </select>
+                </div>
+                <button class="float-left"></button>
+                <p>Remember Me</p>
+                <a href="#">Sign Up</a>
+        </section>
+        </section>
     </main>
     <footer>
         <div id="contactus"class="contact">
@@ -124,5 +186,6 @@
             </ul>
         </div>
     </footer>
+
 </body>
 </html>
