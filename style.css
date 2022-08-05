@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
     font-family: 'aileronblack';
     src: url('Aileron-Black-webfont.eot');
     src: url('Aileron-Black-webfont.eot?#iefix') format('embedded-opentype'),
@@ -9,10 +9,13 @@
     font-weight: normal;
     font-style: normal;
 
-} */
+}
 body{
     font-family: 'aileronblack';
-    width: 100%;
+    position: relative;
+    height: max-content;
+    background-color: hsl(0,0%,13%);
+   
 }
 .float-left{
     float: left;
@@ -20,216 +23,242 @@ body{
 .float-right{
     float: right;
 }
-.brand{
-    border-bottom: 3px solid #000; 
-    height: 90px;
-    margin: -.5em 0em 0em 0em;
+
+
+li{
+    display: inline-block;
 }
-header{
-    border: 1px solid rgb(189, 189, 189);
-    margin: -.5em 0em 0em 0em;
-    height: 80px;
-    width: 100%;
-    background-color: hsl(0, 0%, 91%);
-}
-.title{
-    margin: 1em .5em .5em 3em;
-    font-size: 30px;
-    font-weight: bold;
-}
-.logo,.profile,.title{
-    position: absolute;
-}
-.logo,.profile{
-    border-radius: 100%;
+.logo-section{
+    position: relative;
+    top:0;
+    left:0;
+    background-color: rgb(206, 206, 206);
+    height: inherit;
+    min-height: 60px;
 }
 .logo{
-    width: 65px;
-    height: 65px;
-    margin: .8em 0 0 1em;
-}
-.profile{
-    right: 0;
-    width: 50px;
-    height: 50px;
-    margin: 1.2em 1.5em 0em 1em;
-    border: 2px solid #000;
-}
-.profile:hover{
-    border: 2px solid rgb(167, 167, 167);
-}
-.navbtn{
-    display: inline-block;
-    padding: 1em 2em;
-    text-decoration: none;
-    width: 150px;
-    height: 20px;
-    text-align: center;
-    color: #000;
-}
-.navbtn:hover{
-    border-bottom: 3px inset #000;
-    color: rgb(89, 88, 88);
-}
-.btn{
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    height: min-content;
-    min-height: 39px;
-    box-shadow: 0px 2px 10px rgba(50, 50, 52, 0.7);
-    background-color: #fff;
-    z-index: 3;
- 
-}
-main{
-    width: 100%;
-}
-section{
     position: relative;
-    margin: 4rem;
-    height: 600px;
-    width: 80%;
-}
-section h1{
-    font-size: 30px;
-}
-.about p{
-    overflow: auto;
-    border-radius: 7px; 
-}
-.about p,.nerd{
-    border: 2px solid #000;
-}
-.about, .about p{
-    position: absolute;
     left: 0;
-    right: 0;
-    top: 0;
+    top: 40px;
     bottom: 0;
-    min-width: 200px;
-    margin-top: 2em;
+    width: 150px;
+    height: 100px;
 }
-.about{
-
-    margin: 2em;
-}
-.about p{
-    text-align: left;
-    background-color: #fff;
-    font-size: 18px;
-    padding: 2em;
-    z-index: 2;
-}
-.nerd{
-    padding: 1em;
-    margin: .2em;
-    float: left;
-    width: 100%;
-    height: 200px;
-    border-radius: 7px; 
-}
-.nerd img{
+.avatar{
     width: 60px;
     height: 60px;
-    padding: .5em;
-    border: 3px solid rgb(116, 114, 114);
+    margin: 1em;
+}
+.avatar:hover{
+    fill: #fff;
+    background-color: rgb(187, 187, 187);
     border-radius: 100%;
-    background-color: rgb(255, 255, 255);
 }
-.nerd div{
-    display: inline-block;
-    margin: 1.5em 2.3em 2em 1em;
-    font-size: 20px;
-}
-.nerd img:hover{
-    border: 3px solid rgb(81, 81, 81);
-    border-radius: 100%;
-    background-color: rgb(214, 214, 214);
-}
-
-.nerd-list,.nerds{
-    position: absolute;
-    left: 0;
+.profile{
+    position: relative;
+    left: 0px;
+    top: 40px;
     bottom: 0;
-    right:0;
+    width: 150px;
+    height: 100px;
+    justify-content: right;
 }
-.nerd-list{
-    height: 400px;
-    margin: 2em 2em 2em 2em;
-    padding: 1em;
-    border-radius: 7px;
+.title{
+    margin-right: 1em;
 }
-
-ul,section{
+header{
+    position: relative;
+    height: fit-content;
+}
+nav{
+    position: relative;
+    top: -45px;
+    left: 0;
+    right: 0;
+    height:111.5px;
+    padding: 0em 1em 2em 1em;
+    background-color:rgb(206, 206, 206);
+    border-bottom: 2px solid white;
+    margin-bottom: 2em;
+}
+nav a.btn{
+    font-family: 'aileronblack';
+    text-decoration: none;
     display: inline-block;
-}
-ul
-{
-    position: absolute;
+    position: relative;
     top: 0;
     bottom: 0;
     left: 0;
-    right: 0;
-    margin-top: 3em;
+    margin-top: 0em;
+    width: 140px;
+    min-width: 10px;
+    max-width: 10em;
+    height: 26px;
+    padding: 2em 2em;
+    font-size: 16.5px;
+    font-weight: bold;
+    background-color: rgb(206, 206, 206);
+    border-bottom: 2px solid white;
+    color: #000;
+    text-align: center;
 }
-li{
-    margin: 1em 1em;
-
+nav a:hover{
+   border-bottom: 2px solid rgb(120, 120, 120);
+    color: #fff;
+    /* height: 24px; */
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    width:100%;
+    height: fit-content;
+    height: 60px;
+    /* background-color: hsl(0,0%,55.5%); */
+     z-index: 10;
+    border-radius: 6px;
+}
+.aboutus{
+    margin: auto;
+    width: 70%;
+    margin-bottom: 4em;
+}
+main{
+    margin: 0m 0em 3em 0em;
+    background-image: linear-gradient(rgb(206, 206, 206), rgb(129, 129, 129), rgb(64, 64, 64), rgb(33, 33, 33));
+    
+}
+section{
+    margin: 2em;
+}
+.nerd1{
+    position: relative;
+    max-width: 100%;
+    margin: 10em;
+    max-height: 300px;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    padding: 2em;
+}
+.ncon{
+    display: flex;
+    flex-direction: row;
+}
+.slider-container,.nslider-container{
+    position: relative;
+    /* border: 3px solid hsl(0,0%,44%); */
+    margin: auto;
+    border-radius: 6px;
+}
+.slider-container{
+    height: 600px;
+    max-width: 85%;
+}
+.nslider-container{
+    height: 300px;
+    max-width: 100%;
+}
+.scontainer{
+    position: relative;
+    padding: 1em;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+.ncontainer{
+    position: relative;
+    bottom: 35px;
+}
+.description{
+    height: 250px;
+    font-size: 15px;
+    width: 600px;
+    position: relative;
+    top: 2px;
+    overflow-y: auto;
 }
 footer{
-    margin: auto;
-}
-footer div.contact,footer div.social{
-    width: 47.92%;
-    height: 220px;
-    padding:2em 0em 2em 2em;
-    background-color: hsla(0, 0%, 92%, 0.937);
+    position: relative;
+    top: 0;
+    bottom: 0;
     /* border: 1px solid #000; */
-    font-size: 15px;
-    margin: 0em -.5em 0em .5em;
-    min-width: 300px;
-}
-footer div.contact{
-    position:absolute;
-    left: 0;
+    border-radius: 6px;
+    width: 100%;
+    height: 300px;
 }
 footer div.social{
-    position:absolute;
+    height: 220px;
+    width: 400px;
+    padding:2em 0em 2em 2em;
+    font-size: 15px;
+    margin: 0em 1em 0em 1em;
+}
+
+footer div.social{
+    position: relative;
+    top: 70px;
+    bottom: 0;
+    left: 0;
     right: 0;
+    margin: auto;
+    justify-content: center;
 }
 
-
-
-.b
-{
-    display: inline-block;
+footer ul li a,footer ul li p{
     text-decoration: none;
-    border:  solid 2px #202020;
-    border-radius: 7px;
-    margin: 10px;
-    padding: 10px 36px;
-    background-color: #FFFFFF;
-    color: #202020;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 600;
-    width: min-content;
-    min-width: 150px;
+    color: #000;
+    vertical-align: middle;
+    height: 20px;
+    margin: 1em;
 }
-.b:hover
+footer ul li img{
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    margin-right: 1em;
+}
+footer ul li{
+    margin-bottom: 1em;
+}
+footer ul li span{
+    font-size: 11.5px;
+}
+.cont{
+    position: relative;
+    margin: auto;
+    bottom: 60px;
+    right: 50px;
+    width: 500px;
+}
+.cont li{
+    width: 200px;
+    margin: 1em;
+    justify-content: center;
+}
+
+.image-list,.profile-page{
+    text-align: center;
+    font-size: 30px;
+}
+.profile-page h1,h4{
+    text-decoration: underline;
+}
+.image-list img{
+    width: 40%;
+    border-radius: 6px;
+    border: 2px solid #000;
+    margin: 1em;
+}
+.collection{
+    overflow:scroll;
+    width:80%;
+    height: 600px;
+    padding-left: 2em;
+    margin-left: 4em;
+    border: 3px solid #000;
+    border-radius: 6px;
+}
+#prof
 {
-    padding: 9px 35px;
-    border:  solid 3px #1c1d1c;
+    width: 120px;
+    height: 120px;
 }
-.b:active
-{
-    border:  solid 2px #8b8d8d;
-    padding: 10px 36px;
-    color: #8b8d8d;
-}
-h1,h2
-{
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+
